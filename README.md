@@ -28,12 +28,21 @@ It supports multilingual functionality (English & Arabic) with advanced search, 
 
 - **Search Bar** with debounce for efficient freelancer name searches
 - **Filters** including:
+
   - Service Category
   - Seller Level
   - Budget
   - Delivery Time
-  - Secondary Location (with Arabic-to-English partial matching).
+  - Secondary Location (with Arabic-to-English partial matching).  
     For example, typing `القاهرة` or partial input like `القا` will still find freelancers with Cairo as their secondary location.
+    **Available Secondary Locations for Search:**
+    - Abu Dhabi (أبو ظبي)
+    - Ajman (عجمان)
+    - Alexandria (الإسكندرية)
+    - Cairo (القاهرة)
+    - Dubai (دبي)
+    - Makka (مكة)
+
 - **Sorting Dropdown** fully functional with options:
   - Most Rated
   - Lowest Rated
