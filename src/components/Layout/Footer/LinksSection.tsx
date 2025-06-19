@@ -26,9 +26,9 @@ export default function LinksSection({ titleKey, links }: Props) {
       <button
         type="button"
         onClick={() => setExpanded((prev) => !prev)}
-        className="w-full py-4 md:py-0 flex items-center justify-between text-start md:cursor-default"
+        className="w-full py-4 md:py-3 flex items-center justify-between text-start md:cursor-default"
       >
-        <h4 className="font-semibold text-gray-900 md:mb-3">{t(titleKey)}</h4>
+        <h3 className="font-semibold text-gray-900 md:mb-1">{t(titleKey)}</h3>
         <span className="md:hidden text-gray-500">
           {expanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
         </span>
@@ -43,13 +43,13 @@ export default function LinksSection({ titleKey, links }: Props) {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="space-y-4 overflow-hidden md:hidden"
+            className="space-y-1 overflow-hidden md:hidden"
           >
             {links.map((item) => (
               <li key={item.key}>
                 <Link
                   href={item.href}
-                  className="text-sm text-gray-600 hover:text-accent transition block"
+                  className="text-sm py-3 text-gray-600 hover:text-accent transition block"
                 >
                   {t(item.key)}
                 </Link>
@@ -60,12 +60,12 @@ export default function LinksSection({ titleKey, links }: Props) {
       </AnimatePresence>
 
       {/* Always-visible section for desktop */}
-      <ul className="hidden md:block space-y-4">
+      <ul className="hidden md:block">
         {links.map((item) => (
           <li key={item.key}>
             <Link
               href={item.href}
-              className="text-sm text-gray-600 hover:text-accent transition block"
+              className="text-sm py-3 text-gray-600 hover:text-accent transition block"
             >
               {t(item.key)}
             </Link>
