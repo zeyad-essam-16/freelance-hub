@@ -5,15 +5,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import "./service-swiper.css";
+import "./service-slider.css";
 
 // import required modules
 import { Navigation, FreeMode } from "swiper/modules";
 import { useLocale, useTranslations } from "next-intl";
 import { SERVICE_KEYS } from "@/constants/services";
 
-export default function SericesSwiper() {
+export default function SericesSlider() {
   const t = useTranslations("services");
   const locale = useLocale();
   return (
@@ -22,8 +23,9 @@ export default function SericesSwiper() {
         dir={locale === "ar" ? "rtl" : "ltr"}
         navigation={true}
         slidesPerView={"auto"}
+        freeMode={{ enabled: true, momentumRatio: 0.65, sticky: true }}
         modules={[FreeMode, Navigation]}
-        className={`services_swiper ${locale === "ar" ? "rtl" : "ltr"}`}
+        className={`services_slider ${locale === "ar" ? "rtl" : "ltr"}`}
       >
         {SERVICE_KEYS.map((key) => (
           <SwiperSlide

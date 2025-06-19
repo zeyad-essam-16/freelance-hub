@@ -1,40 +1,40 @@
-.services_swiper {
+.services_slider {
   user-select: none;
 }
 
-.services_swiper .swiper-button-prev,
-.services_swiper .swiper-button-next {
+.services_slider .swiper-button-prev,
+.services_slider .swiper-button-next {
   width: fit-content;
   z-index: 10;
   color: #000;
 }
 
-.services_swiper .swiper-button-prev::after,
-.services_swiper .swiper-button-next::after {
+.services_slider .swiper-button-prev::after,
+.services_slider .swiper-button-next::after {
   height: 20px;
   font-size: 20px;
 }
 
-.services_swiper:not(.rtl) .swiper-button-prev {
+.services_slider:not(.rtl) .swiper-button-prev {
   left: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
 }
 
-.services_swiper.rtl .swiper-button-prev {
+.services_slider.rtl .swiper-button-prev {
   right: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
 }
 
-.services_swiper:not(.rtl) .swiper-button-next {
+.services_slider:not(.rtl) .swiper-button-next {
   right: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
 }
 
-.services_swiper.rtl .swiper-button-next {
+.services_slider.rtl .swiper-button-next {
   left: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
 }
 
-.services_swiper .swiper-button-disabled {
+.services_slider .swiper-button-disabled {
   display: none;
 }
