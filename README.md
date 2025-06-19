@@ -101,6 +101,14 @@ It supports multilingual functionality (English & Arabic) with advanced search, 
 
 ---
 
+## 📊 Performance
+
+Achieved a perfect score on Chrome Lighthouse audit across all categories:
+
+![Lighthouse Score](https://res.cloudinary.com/drru4lsys/image/upload/v1750360165/Freelance_Hub_-_Google_Chrome_6_19_2025_10_08_05_PM.png)
+
+---
+
 ## 🔗 Links
 
 - **GitHub Repository:** [https://github.com/zeyad-essam-16/freelance-hub](https://github.com/zeyad-essam-16/freelance-hub)

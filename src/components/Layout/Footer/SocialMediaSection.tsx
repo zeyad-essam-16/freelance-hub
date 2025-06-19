@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const socials = [
-  { name: "LinkedIn", href: "/", icon: "/linkedin.png" },
-  { name: "Google", href: "/", icon: "/google.png" },
-  { name: "TikTok", href: "/", icon: "/tiktok.png" },
-  { name: "Pinterest", href: "/", icon: "/pinterest.png" },
-  { name: "Facebook", href: "/", icon: "/facebook.png" },
+  { name: "LinkedIn", href: "/", icon: "/images/linkedin.png" },
+  { name: "Google", href: "/", icon: "/images/google.png" },
+  { name: "TikTok", href: "/", icon: "/images/tiktok.png" },
+  { name: "Pinterest", href: "/", icon: "/images/pinterest.png" },
+  { name: "Facebook", href: "/", icon: "/images/facebook.png" },
 ];
 
 export default function SocialMediaSection() {

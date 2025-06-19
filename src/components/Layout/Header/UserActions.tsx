@@ -20,7 +20,7 @@ export default function UserActions() {
           width={44}
           height={44}
           className="rounded-full"
-          src="/avatar.jpeg"
+          src="/images/avatar.jpeg"
           alt="Rounded avatar"
         />
       </div>
