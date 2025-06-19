@@ -14,7 +14,7 @@ import { Navigation, FreeMode } from "swiper/modules";
 import { useLocale, useTranslations } from "next-intl";
 import { SERVICE_KEYS } from "@/constants/services";
 
-export default function SericesSlider() {
+export default function ServiceSlider() {
   const t = useTranslations("services");
   const locale = useLocale();
   return (

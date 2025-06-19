@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import LanguageSwitcher from "@/components/i18n/LanguageSwitcher";
 
 const CopyrightSection = () => {
   const t = useTranslations("footer");

@@ -1,15 +1,11 @@
-import Header from "@/components/Header";
 import ServicesSlider from "@/components/ServicesSlider";
-import Results from "@/components/Results";
-import Footer from "@/components/Footer";
+import SearchResults from "@/components/SearchResults";
 
 export default function HomePage() {
   return (
     <>
-      <Header />
       <ServicesSlider />
-      <Results />
-      <Footer />
+      <SearchResults />
     </>
   );
 }

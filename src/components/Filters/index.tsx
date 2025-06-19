@@ -10,14 +10,14 @@ import MobileFilters from "./MobileFilters";
 import { isFiltersActive } from "@/lib/utils/filterUtils";
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { memo } from "react";
 
-export default function Filters() {
+const Filters = () => {
   const dispatch = useAppDispatch();
   const t = useTranslations("filters");
 
-  const { sortBy } = useAppSelector((state) => state.filters.filters);
-
   const filters = useAppSelector((state) => state.filters.filters);
+  const { sortBy } = filters;
   const showReset = isFiltersActive(filters);
 
   return (
@@ -52,6 +52,7 @@ export default function Filters() {
           <button
             onClick={() => dispatch(resetFilters())}
             className="cursor-pointer inline-flex items-center gap-2 text-sm px-3 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+            aria-label={t("reset")}
           >
             <X size={14} />
             {t("reset")}
@@ -60,4 +61,6 @@ export default function Filters() {
       )}
     </section>
   );
-}
+};
+
+export default memo(Filters);

@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { setSearchQuery } from "@/store/slices/filterSlice";
-import SearchInput from "../ui/SearchInput";
+import SearchInput from "@/components/ui/SearchInput";
 
 const Searchbar = () => {
   const t = useTranslations();

@@ -39,6 +39,7 @@ const LanguageSwitcher = () => {
                 ? "text-accent border-b-2 border-accent"
                 : "text-gray-500 border-b-2 border-transparent"
             )}
+            aria-label={`Switch to ${label}`}
           >
             {t(label)}
           </button>

@@ -1,6 +1,6 @@
 "use client";
 
-import LinksSection from "@/components/Footer/LinksSection";
+import LinksSection from "@/components/Layout/Footer/LinksSection";
 import SocialMediaSection from "./SocialMediaSection";
 import CopyrightSection from "./CopyrightSection";
 

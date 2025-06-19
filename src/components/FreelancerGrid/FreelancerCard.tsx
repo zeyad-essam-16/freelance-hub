@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Heart, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { memo } from "react";
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -103,4 +104,4 @@ const FreelancerCard = ({ freelancer }: Props) => {
   );
 };
 
-export default FreelancerCard;
+export default memo(FreelancerCard);

@@ -1,4 +1,3 @@
-// components/Footer/SocialMediaSection.tsx
 "use client";
 
 import Image from "next/image";

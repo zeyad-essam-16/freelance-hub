@@ -34,7 +34,7 @@ export default function LinksSection({ titleKey, links }: Props) {
         </span>
       </button>
 
-      {/* 🟢 Collapsible section for mobile only */}
+      {/* Collapsible section for mobile only */}
       <AnimatePresence initial={false}>
         {expanded && (
           <motion.ul
@@ -59,7 +59,7 @@ export default function LinksSection({ titleKey, links }: Props) {
         )}
       </AnimatePresence>
 
-      {/* 🖥️ Always-visible section for desktop */}
+      {/* Always-visible section for desktop */}
       <ul className="hidden md:block space-y-4">
         {links.map((item) => (
           <li key={item.key}>

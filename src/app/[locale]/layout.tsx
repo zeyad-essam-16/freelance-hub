@@ -7,6 +7,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 
 import { ReduxProvider } from "@/providers/redux-provider";
+import AppLayout from "@/components/Layout/AppLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +47,9 @@ export default async function LocaleLayout({
       >
         <main>
           <NextIntlClientProvider>
-            <ReduxProvider>{children}</ReduxProvider>
+            <ReduxProvider>
+              <AppLayout>{children}</AppLayout>
+            </ReduxProvider>
           </NextIntlClientProvider>
         </main>
       </body>
