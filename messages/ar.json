@@ -29,7 +29,7 @@
   },
   "results": {
     "title": "نتائج البحث عن ({query})",
-    "resultsCount": "{count} نتيجة",
+    "resultsCount": "عدد النتائج: {count}",
     "noResults": "لم يتم العثور على مستقلين يطابقون بحثك."
   },
   "filters": {

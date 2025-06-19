@@ -29,7 +29,7 @@
   },
   "results": {
     "title": "Results for ({query})",
-    "resultsCount": "{count} Results",
+    "resultsCount": "{count} Result(s)",
     "noResults": "No freelancers matched your search."
   },
   "filters": {
