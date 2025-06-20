@@ -52,6 +52,8 @@ export default async function LocaleLayout({
             </ReduxProvider>
           </NextIntlClientProvider>
         </main>
+        {/* Portal Root — used by components like SidebarDrawer or Modal */}
+        <div id="portal-root" />
       </body>
     </html>
   );
