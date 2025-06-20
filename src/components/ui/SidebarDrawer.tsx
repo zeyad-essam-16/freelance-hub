@@ -45,7 +45,7 @@ export default function SidebarDrawer({
       />
 
       {/* Drawer */}
-      <aside
+      <div
         role="dialog"
         aria-modal="true"
         aria-label={title}
@@ -63,7 +63,12 @@ export default function SidebarDrawer({
         {/* Header */}
         <div className="flex justify-between items-center px-4 py-2 border-b border-accent shrink-0">
           <h2 className="text-lg font-semibold">{title}</h2>
-          <button type="button" className="p-3" onClick={onClose}>
+          <button
+            type="button"
+            aria-label="Close sidebar"
+            className="p-3"
+            onClick={onClose}
+          >
             <X className="w-5 h-5 text-gray-600" />
           </button>
         </div>
@@ -72,7 +77,7 @@ export default function SidebarDrawer({
         <div className="p-4 overflow-y-auto flex-1 pb-7 overscroll-contain">
           {children}
         </div>
-      </aside>
+      </div>
     </Portal>
   );
 }
